@@ -1,14 +1,367 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
-</head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desa Sungai Hijau | Maju Bersama Membangun Desa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#166534', // green-800
+              'primary-dark': '#14532d', // green-900
+              secondary: '#f59e0b', // amber-500
+              light: '#f3f4f6', // gray-100
+              text: '#1f2937', // gray-800
+              muted: '#6b7280', // gray-500
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light text-text font-sans">
+    <header
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg shadow-sm"
+    >
+      <div class="max-w-6xl mx-auto px-6 sm:px-8">
+        <nav
+          class="flex flex-col md:flex-row items-center justify-between py-4"
+        >
+          <a class="text-2xl font-bold text-primary" href="#beranda"
+            >DESA SUNGAI HIJAU</a
+          >
+          <div
+            class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-4 md:mt-0"
+          >
+            <a href="#beranda" class="text-muted hover:text-primary transition-colors"
+              >Beranda</a
+            >
+            <a href="#tentang" class="text-muted hover:text-primary transition-colors"
+              >Tentang</a
+            >
+            <a
+              href="#unggulan"
+              class="text-muted hover:text-primary transition-colors"
+              >Produk Unggulan</a
+            >
+            <a
+              href="#komunitas"
+              class="text-muted hover:text-primary transition-colors"
+              >Komunitas</a
+            >
+            <a href="#kontak" class="text-muted hover:text-primary transition-colors"
+              >Kontak</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="beranda"
+        class="relative text-white bg-cover bg-center"
+        style="background-image: url('https://placehold.co/1200x800/228B22/FFFFFF?text=Desa+Sungai+Hijau')"
+      >
+        <div class="absolute inset-0 bg-primary-dark/60"></div>
+        <div
+          class="max-w-6xl mx-auto px-6 sm:px-8 py-28 md:py-40 text-center relative"
+        >
+          <div class="max-w-4xl mx-auto">
+            <span
+              class="inline-block bg-white/20 backdrop-blur-sm text-white text-sm font-semibold px-4 py-2 rounded-full mb-4"
+              >Maju Bersama Membangun Desa</span
+            >
+            <h1
+              class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-shadow-lg"
+            >
+              Desa Sungai Hijau
+            </h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
+              “Desa Sungai Hijau dikenal dengan lahan hortikultura yang subur —
+              tempat di mana kerja keras petani menghadirkan hasil bumi yang
+              segar dan menyejahterakan”
+            </p>
+            <a
+              class="inline-block bg-secondary text-primary-dark font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              href="#unggulan"
+              >Jelajahi Produk Lokal</a
+            >
+            <div
+              class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-3xl mx-auto"
+            >
+              <span class="flex items-center gap-3 font-medium text-gray-200"
+                ><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
+                Jejak Budaya Kuat</span
+              >
+              <span class="flex items-center gap-3 font-medium text-gray-200"
+                ><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
+                Keindahan Kebun Hortikultura</span
+              >
+              <span class="flex items-center gap-3 font-medium text-gray-200"
+                ><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
+                UMKM Berbasis Digital</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tentang" class="py-24">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-primary text-center mb-6"
+          >
+            Tentang Sungai Hijau
+          </h2>
+          <p class="max-w-3xl mx-auto text-center text-muted mb-16">
+            Desa Sungai Hijau di Kecamatan Pangkalan Banteng berkolaborasi dengan
+            Universitas Darwan Ali dalam melaksanakan program pemberdayaan
+            masyarakat. Kolaborasi ini mendorong pengembangan potensi pertanian,
+            UMKM, dan inovasi digital untuk meningkatkan kemandirian ekonomi
+            desa.
+          </p>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            >
+              <h3 class="text-xl font-bold text-primary mb-3">
+                Jejak Budaya
+              </h3>
+              <p class="text-muted">
+                Jejak budaya Desa Sungai Hijau memiliki nilai yang kuat melalui
+                tradisi gotong royong dan kebersamaan masyarakatnya. Nilai-nilai
+                keagamaan dan kearifan lokal masih dijaga dalam setiap kegiatan
+                sosial dan perayaan desa. Dalam kesederhanaannya, warga hidup
+                rukun, saling membantu, dan tetap mempertahankan budaya yang
+                menjadi identitas desa.
+              </p>
+            </div>
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            >
+              <h3 class="text-xl font-bold text-primary mb-3">
+                Keindahan Sungai Hijau
+              </h3>
+              <p class="text-muted">
+                Desa Sungai Hijau menyuguhkan keindahan alam yang menenangkan
+                dengan hamparan kebun dan tanaman hortikultura yang hijau
+                membentang. Udara pagi terasa segar, disertai suara burung dan
+                aliran air dari parit kecil yang menambah kesejukan suasana
+                desa. Keindahan alam berpadu dengan keramahan warganya,
+                menjadikan Desa Sungai Hijau tampak sederhana namun memikat bagi
+                siapa pun yang berkunjung.
+              </p>
+            </div>
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            >
+              <h3 class="text-xl font-bold text-primary mb-3">
+                UMKM “Pengembangan Ekonomi Desa“
+              </h3>
+              <p class="text-muted">
+                KWT Melati mendorong Pemberdayaan UMKM Berbasis Pengelolaan Hasil
+                Pertanian dan Digitalisasi Pemasaran di Desa Sungai Hijau.”
+                Melalui inovasi produk olahan pertanian dan penerapan sistem
+                e-commerce, program ini bertujuan meningkatkan nilai tambah, daya
+                saing, serta kemandirian ekonomi masyarakat desa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="unggulan" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-primary text-center mb-6"
+          >
+            Etalase Produk Unggulan
+          </h2>
+          <p class="max-w-3xl mx-auto text-center text-muted mb-16">
+            Rasakan kualitas olahan hasil pertanian autentik dari para pelaku
+            UMKM Desa Sungai Hijau yang menggunakan resep turun-temurun dengan
+            sentuhan teknologi pangan masa kini.
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="https://placehold.co/400x300/228B22/FFFFFF?text=Produk+1"
+                  alt="Produk 1"
+                  class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">
+                  Sayur Organik
+                </h3>
+                <p class="text-muted mb-4 text-sm">
+                  Selada, bayam, dan kangkung segar langsung dari kebun.
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-lg font-bold text-primary">Rp10.000</span>
+                  <a
+                    href="#"
+                    class="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary-dark transition-colors font-semibold"
+                    >Beli</a
+                  >
+                </div>
+              </div>
+            </div>
+             <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="https://placehold.co/400x300/228B22/FFFFFF?text=Produk+2"
+                  alt="Produk 2"
+                  class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">
+                  Keripik Sayur
+                </h3>
+                <p class="text-muted mb-4 text-sm">
+                  Camilan sehat dan renyah, diolah dari sayuran pilihan.
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-lg font-bold text-primary">Rp15.000</span>
+                  <a
+                    href="#"
+                    class="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary-dark transition-colors font-semibold"
+                    >Beli</a
+                  >
+                </div>
+              </div>
+            </div>
+             <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="https://placehold.co/400x300/228B22/FFFFFF?text=Produk+3"
+                  alt="Produk 3"
+                  class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">
+                  Jus Buah Naga
+                </h3>
+                <p class="text-muted mb-4 text-sm">
+                  Minuman segar penambah stamina, tanpa pemanis buatan.
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-lg font-bold text-primary">Rp12.000</span>
+                  <a
+                    href="#"
+                    class="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary-dark transition-colors font-semibold"
+                    >Beli</a
+                  >
+                </div>
+              </div>
+            </div>
+             <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="https://placehold.co/400x300/228B22/FFFFFF?text=Produk+4"
+                  alt="Produk 4"
+                  class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">
+                  Pupuk Kompos
+                </h3>
+                <p class="text-muted mb-4 text-sm">
+                  Suburkan tanaman Anda dengan pupuk organik berkualitas.
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-lg font-bold text-primary">Rp25.000</span>
+                  <a
+                    href="#"
+                    class="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary-dark transition-colors font-semibold"
+                    >Beli</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="komunitas" class="py-24">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8">
+          <div class="bg-primary text-white rounded-2xl shadow-2xl p-8 md:p-16">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+              <div class="text-left">
+                <span
+                  class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full mb-4"
+                  >KOLABORASI WARGA</span
+                >
+                <h2 class="text-3xl md:text-5xl font-bold">
+                  Mari Wujudkan Desa Pertanian yang Ramah Pengunjung
+                </h2>
+              </div>
+              <div class="text-left">
+                <p class="mb-8 text-gray-200">
+                  Desa Sungai Hijau membuka ruang bagi komunitas, institusi
+                  pendidikan, dan investor sosial untuk mengembangkan program
+                  berbasis kemandirian, edukasi lingkungan, dan wisata minat
+                  khusus.
+                </p>
+                <div
+                  id="kontak"
+                  class="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-6 text-left"
+                >
+                  <strong class="block text-lg mb-2">Hubungi Pengelola</strong>
+                  <span class="block">WA Center: +62 812-3456-7890</span>
+                  <span>Email: info@sungaihijau.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary-dark text-white py-8">
+      <div class="max-w-6xl mx-auto px-6 sm:px-8 text-center text-gray-400">
+        <p>&copy; 2024 Universitas Darwan Ali. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
