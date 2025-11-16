@@ -12,12 +12,12 @@
         theme: {
           extend: {
             colors: {
-              primary: '#166534', // green-800
-              'primary-dark': '#14532d', // green-900
-              secondary: '#f59e0b', // amber-500
-              light: '#f3f4f6', // gray-100
-              text: '#1f2937', // gray-800
-              muted: '#6b7280', // gray-500
+              primary: '#166534',
+              'primary-dark': '#14532d',
+              secondary: '#f59e0b',
+              light: '#f3f4f6',
+              text: '#1f2937',
+              muted: '#6b7280',
             },
             fontFamily: {
               sans: ['Poppins', 'sans-serif'],
@@ -49,7 +49,6 @@
           <a class="text-2xl font-bold text-white z-50" id="site-title" href="#beranda"
             >DESA SUNGAI HIJAU</a
           >
-          <!-- Desktop Menu -->
           <div
             id="desktop-nav"
             class="hidden md:flex items-center justify-center gap-x-6"
@@ -74,7 +73,6 @@
               >Kontak</a
             >
           </div>
-          <!-- Mobile Menu Button -->
           <div class="md:hidden flex items-center z-50">
             <button id="hamburger-btn" class="text-white focus:outline-none">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -82,7 +80,6 @@
           </div>
         </nav>
       </div>
-       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden absolute top-0 left-0 w-full h-screen">
           <div class="flex flex-col items-center justify-center h-full space-y-8">
             <a href="#beranda" class="text-2xl text-primary font-semibold">Beranda</a>
@@ -101,7 +98,7 @@
           <div class="w-full h-full shrink-0 bg-cover bg-center" style="background-image: url('img/bg_desasungaihijau2.jpg')"></div>
           <div class="w-full h-full shrink-0 bg-cover bg-center" style="background-image: url('img/bg_desasungaihijau3.jpg')"></div>
         </div>
-        <div class="absolute inset-0 bg-black/50"></div> 
+        <div class="absolute inset-0 bg-black/50"></div>
         <div
           class="max-w-6xl mx-auto px-6 sm:px-8 text-center relative"
         >
@@ -324,7 +321,7 @@
     </footer>
 
     <script>
-      // Smooth scroll for anchor links
+      
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
@@ -334,14 +331,14 @@
         });
       });
 
-      // Mobile Menu Toggle
+      
       const hamburgerBtn = document.getElementById('hamburger-btn');
       const mobileMenu = document.getElementById('mobile-menu');
       const siteTitleMobile = document.getElementById('site-title');
 
       hamburgerBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
-        // Change hamburger to close icon and back
+        
         if (mobileMenu.classList.contains('hidden')) {
             hamburgerBtn.innerHTML = `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>`;
         } else {
@@ -349,7 +346,7 @@
         }
       });
 
-      // Close mobile menu when a link is clicked
+      
       mobileMenu.querySelectorAll('a').forEach(link => {
           link.addEventListener('click', () => {
               mobileMenu.classList.add('hidden');
@@ -357,7 +354,7 @@
           });
       });
 
-      // Transparent header on scroll
+      
       const header = document.getElementById('header');
       const desktopNav = document.getElementById('desktop-nav');
       const navLinks = desktopNav.querySelectorAll('a');
@@ -388,7 +385,7 @@
         }
       });
 
-      // Image Slider
+      
       let currentSlide = 0;
       const slider = document.getElementById('slider');
       const slideCount = slider.children.length;
@@ -398,7 +395,7 @@
         slider.style.transform = `translateX(-${currentSlide * 100}%)`;
       }
 
-      setInterval(nextSlide, 5000); // Change image every 5 seconds
+      setInterval(nextSlide, 5000);
     </script>
   </body>
 </html>
